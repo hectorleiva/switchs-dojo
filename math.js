@@ -7,7 +7,7 @@ function add(x, y) {
 
 add(2, 5)
 
-function subtract(x, y){
+function subtract(x, y) {
     const firstnumber = x;
     const secondNumber = y;
     const total = firstnumber - secondNumber;
@@ -15,6 +15,21 @@ function subtract(x, y){
 }
 
 subtract(10,9)
+
+function multiply (x, y) {
+	const firstnumber = x;
+	const secondnumber = y;
+	const total = firstnumber * secondnumber;
+	return total;
+}
+
+function divide (x, y) {
+	const firstnumber = x;
+	const secondnumber = y;
+	const total = firstnumber / secondnumber;
+	return total;
+}
+
 console.log(
     subtract(
         add(
@@ -23,4 +38,12 @@ console.log(
         ), 1
     )
 )
+console.log(
 subtract(99,9)
+)
+console.log(
+multiply(5,5)
+)
+console.log(
+divide(20,10)
+)
