@@ -1,6 +1,6 @@
-const message = [1, "Hey", false, 2, "Switch", true];
+//const message = [1, "Hey", false, 2, "Switch", true];
 
-let finalMessage = "";
+//let finalMessage = "";
 
 // For-loop iteration of an array
 // for (let i = 0; i < message.length; i++) {
@@ -32,4 +32,8 @@ let finalMessage = "";
 //          console.log(stringsOnlyArray);
 //          console.log(booleansOnlyArray);
 
-console.log(finalMessage);
+const message = [`Aww Yeah`,`Bugatti`,3,5,true,false,7,8,false,`Hooray`,true]
+const stringsOnlyArray = message.filter((word) => word.length >0 );
+const booleansOnlyArray = message.filter((boolean) =>boolean <=1 );
+const numbersonlyArray = message.filter((number) =>number >=2);
+console.log(stringsOnlyArray,'\n',booleansOnlyArray,'\n',numbersonlyArray);
