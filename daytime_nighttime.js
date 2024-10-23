@@ -143,6 +143,12 @@ const weeklyData = [
 ];
 
 // Filtering for days where sleptWell is true
-const sleptWellDays = weeklyData.filter(day => day.sleptWell);
+//const sleptWellDays = weeklyData.filter(day => day.sleptWell);
 
-console.log(sleptWellDays);
+//const lookingberries = weeklyData.filter (day => day.eat[0].breakfast.includes("berries"));
+
+//console.log(lookingberries);
+
+const lookingforswimming = weeklyData.filter (day => day.exercise.routines.includes("swimming"));
+
+console.log(lookingforswimming);
