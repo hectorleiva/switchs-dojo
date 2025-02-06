@@ -6,7 +6,21 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const db = require('./db')
+async function connectToDatabase() {
 
+  try {
+      await db.query('SELECT NOW()');
+
+      console.log('Connected to PostgreSQL database');
+  } catch (err) {
+
+      console.error('Error connecting to database:', err);
+  }
+  
+}
+
+connectToDatabase();
 var app = express();
 var port = 3001;
 

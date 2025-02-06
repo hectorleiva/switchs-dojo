@@ -1,0 +1,15 @@
+meta {
+  name: DELETE Users
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:3001/users/user
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  user_name: doncheadle
+}

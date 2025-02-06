@@ -1,0 +1,16 @@
+meta {
+  name: POST Users
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3001/users/user
+  body: formUrlEncoded
+  auth: none
+}
+
+body:form-urlencoded {
+  user_name: Billybob
+  first_name: Billard
+}
