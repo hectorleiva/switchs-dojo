@@ -1,17 +1,13 @@
 meta {
-  name: PUT Users
+  name: Update Pizza order
   type: http
-  seq: 3
+  seq: 7
 }
 
 put {
-  url: http://localhost:3001/users/user?id=4
+  url: http://localhost:3002/orders/pizza_id
   body: formUrlEncoded
   auth: none
-}
-
-params:query {
-  id: 4
 }
 
 body:form-urlencoded {

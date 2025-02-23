@@ -7,7 +7,7 @@ Hello world!
 
 ## How to start my express app 
 cd Node-Practice/
-DEBUG=myapp:* npm start
+DEBUG=myapp:* npm run dev
 
 ## Jump into database
 sudo -i -u postgres
