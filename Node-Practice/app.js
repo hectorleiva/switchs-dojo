@@ -8,7 +8,6 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const db = require('./db')
 async function connectToDatabase() {
-
   try {
       await db.query('SELECT NOW()');
 

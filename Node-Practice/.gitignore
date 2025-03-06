@@ -1,0 +1,2 @@
+# Ignore your own environment file
+.env
