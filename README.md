@@ -5,32 +5,20 @@ Sup.
 
 Hello world!
 
-## Setup the database
-
-Create the docker container
-
-```bash
-docker run --name pizzabox \
--p5555:5432 \
--e POSTGRES_USER=aswitch \
--e POSTGRES_PASSWORD=aswitch \
--e POSTGRES_DB=pizzabox \
--d postgres:15
-```
-
-Populate the database with the schema
-
-```bash
-cat ./database-scripts/init.sql | docker exec -i pizzabox psql -Uaswitch -dpizzabox
-```
-
+## check for depencies
+npm install
 ## How to start my express app 
 cd Node-Practice/
 DEBUG=myapp:* npm run dev
+sudo -i -u postgres(use in a separate terminal window)
+
 
 ## Jump into database
-sudo -i -u postgres
-psql -d pizzabox
+psql -d pizzabox(use a separate terminal window)
 
 ## read users
 select * from users;
+
+## list tables
+\dt
+\d+ <table name>(lists whole table)
